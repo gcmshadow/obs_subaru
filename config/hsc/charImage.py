@@ -7,7 +7,13 @@ import os.path
 
 from lsst.meas.astrom import MatchOptimisticBConfig
 
-ObsConfigDir = os.path.join(os.path.dirname(__file__))
+# from lsst.obs.hsc.subtractBackground import HscSubtractBackgroundTask
+
+from lsst.utils import getPackageDir
+
+ObsConfigDir = os.path.join(getPackageDir("obs_subaru"), "config", "hsc")
+
+# config.background.retarget(HscSubtractBackgroundTask)
 
 config.measurePsf.starSelector["objectSize"].widthMin = 0.9
 config.measurePsf.starSelector["objectSize"].fluxMin = 4000

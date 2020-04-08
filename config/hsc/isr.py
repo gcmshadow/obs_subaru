@@ -5,6 +5,8 @@ import os.path
 
 from lsst.obs.subaru.strayLight import SubaruStrayLightTask
 
+from lsst.obs.subaru.ampOffset import HscAmpOffsetTask
+
 config.datasetType = "raw"
 config.fallbackFilterName = "HSC-R"
 config.expectWcs = True
@@ -114,6 +116,9 @@ config.fringe.stats.rngSeedOffset = 0
 config.fringe.stats.stat = 32
 
 config.doNanInterpAfterFlat = False
+
+config.doAmpOffset = True
+config.ampOffset.retarget(HscAmpOffsetTask)
 
 config.doMeasureBackground = True
 
