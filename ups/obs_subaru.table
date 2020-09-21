@@ -1,18 +1,7 @@
-setupRequired(daf_persistence)
-setupRequired(obs_base)
-setupRequired(pipe_tasks)
-setupRequired(meas_astrom)
-setupRequired(sconsUtils)
-setupRequired(astshim)
-setupRequired(astro_metadata_translator)
 setupRequired(obs_subaru_data)
-setupRequired(geom)
-
-setupOptional(daf_butler)
 setupOptional(meas_modelfit)
 setupOptional(meas_extensions_psfex)
 setupOptional(meas_extensions_shapeHSM)
-setupOptional(testdata_subaru)
 
 envPrepend(LD_LIBRARY_PATH, ${PRODUCT_DIR}/lib)
 envPrepend(DYLD_LIBRARY_PATH, ${PRODUCT_DIR}/lib)
