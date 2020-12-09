@@ -1,5 +1,5 @@
 """
-Subaru-specific overrides for ProcessCcdTask (applied before HSC-specific overrides).
+HSC-specific overrides for ProcessCcdTask
 """
 import os.path
 

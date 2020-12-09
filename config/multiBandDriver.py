@@ -1,5 +1,4 @@
-"""Subaru-specific overrides for MultiBandTask"""
-
+"""HSC-specific overrides for MultiBandTask"""
 import os.path
 
 

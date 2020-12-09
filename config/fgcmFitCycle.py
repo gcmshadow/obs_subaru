@@ -1,7 +1,3 @@
-"""
-HSC-specific overrides for FgcmFitCycle
-"""
-
 from lsst.fgcmcal import Sedterm, Sedboundaryterm
 
 config.outfileBase = 'fgcmHscCalibrations'
@@ -133,7 +129,6 @@ config.approxThroughputDict = {'N387': 1.0,
                               'y': 1.0,
                               'N1010': 1.0}
 
-from lsst.fgcmcal import Sedterm, Sedboundaryterm
 config.sedboundaryterms.data = {'gr': Sedboundaryterm(primary='g', secondary='r'),
                                 'ri': Sedboundaryterm(primary='r', secondary='i'),
                                 'iz': Sedboundaryterm(primary='i', secondary='z'),

@@ -26,3 +26,6 @@ config.measurement.plugins["base_PixelFlags"].masksFpCenter.append("BRIGHT_OBJEC
 config.measurement.plugins["base_PixelFlags"].masksFpAnywhere.append("BRIGHT_OBJECT")
 
 config.measurement.plugins.names |= ["base_InputCount"]
+
+import lsst.obs.subaru.filterFraction
+config.measurement.plugins.names.add("subaru_FilterFraction")

@@ -1,9 +1,4 @@
-"""
-HSC-specific overrides for FgcmBuildStarsTable
-"""
-
 import os.path
-
 
 # Demand at least 2 observations of a star to be considered for calibration
 config.minPerBand = 2
@@ -36,4 +31,3 @@ config.fgcmLoadReferenceCatalog.referenceSelector.signalToNoise.fluxField = 'i_f
 config.fgcmLoadReferenceCatalog.referenceSelector.signalToNoise.errField = 'i_fluxErr'
 # Minimum signal-to-noise cut for a reference star to be considered a match.
 config.fgcmLoadReferenceCatalog.referenceSelector.signalToNoise.minimum = 10.0
-

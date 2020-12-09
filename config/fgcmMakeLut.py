@@ -1,7 +1,3 @@
-"""
-HSC-specific overrides for FgcmMakeLut
-"""
-
 # Filter names to build LUT ('short' names)
 config.filterNames = ('g', 'r', 'r2', 'i', 'i2', 'z', 'y',
                       'N387', 'N816', 'N921', 'N1010')

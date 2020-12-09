@@ -1,13 +1,8 @@
 """
-Subaru-specific overrides for ProcessCcdWithFakesTask (applied before HSC-specific overrides).
+HSC-specific overrides for ProcessCcdWithFakesTask
 """
 import os.path
 
-from lsst.utils import getPackageDir
-from lsst.meas.algorithms import ColorLimit
-
-ObsConfigDir = os.path.join(getPackageDir("obs_subaru"), "config")
-
+ObsConfigDir = os.path.dirname(__file__)
 calFile = os.path.join(ObsConfigDir, "calibrate.py")
-
 config.calibrate.load(calFile)

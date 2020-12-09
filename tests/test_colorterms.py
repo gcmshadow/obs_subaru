@@ -36,7 +36,7 @@ class ColortermOverrideTestCase(unittest.TestCase):
 
     def setUp(self):
         """Test that colorterms specific to HSC override correctly"""
-        colortermsFile = os.path.join(os.environ["OBS_SUBARU_DIR"], "config", "hsc", "colorterms.py")
+        colortermsFile = os.path.join(os.path.dirname(__file__), "../config", "colorterms.py")
         self.photoCalConf = photoCal.PhotoCalConfig()
         self.photoCalConf.colorterms.load(colortermsFile)
 
