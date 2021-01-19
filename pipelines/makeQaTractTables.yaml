@@ -1,0 +1,6 @@
+description: Make collated tract-level QA tables for use in plotting pipelines
+tasks:
+  makeQaTractTables:
+    class: lsst.analysis.drp.makeQaTractTables.MakeQaTractTablesTask
+    config:
+       filterMap: {"g": "HSC-G", "r": "HSC-R", "i": "HSC-I", "z": "HSC-Z", "y": "HSC-Y", "N921": "NB0921"}
